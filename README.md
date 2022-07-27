@@ -1,4 +1,4 @@
-# [DE-Kursname hier eintragen]
+# C++ Grundkurs - Teil 1
 
 Dies ist das Repository für den **LinkedIn Learning** Kurs `C++ Grundkurs - Teil 1`. Den gesamten Kurs finden Sie auf [LinkedIn Learning][lil-course-url].
 
