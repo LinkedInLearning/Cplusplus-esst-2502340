@@ -20,7 +20,7 @@ Die Git Branches sind passend zu den Videos im Kurs strukturiert. Die Namenskonv
    - C++ Build-tools
    - Eine IDE (Am besten QtCreator oder Visual Studio Code)
 2. Klonen Sie das Repository in Ihre lokale Maschine unter Verwendung von terminal (Mac), CMD (Windows) oder ein anderes Werkzeug mit grafischer Bedienoberfläche wie SourceTree.
-3. git clone git@github.com:LinkedInLearning/Cplusplus-esst-2502340.git
+3. ```git clone git@github.com:LinkedInLearning/Cplusplus-esst-2502340.git```
 
 ### Autor
 
