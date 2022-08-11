@@ -76,9 +76,6 @@ int main()
 {
     const int val = 20;
 
-    lil::vector lilVec1 {16, 23, 34};
-    lilVec1.push_back(val);
-
     auto ptr1 = std::make_unique<lil::vector>();
 
     ptr1->push_back(42);
