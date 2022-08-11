@@ -8,7 +8,6 @@ int main()
     Customer john("John Doe");
     Customer james;
 
-
     std::cout << john.getName() << std::endl;
 
     std::cout << james.getName() << std::endl;

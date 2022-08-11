@@ -39,5 +39,4 @@ private:
  */
 void askForName(Customer &person);
 
-
 #endif // CUSTOMER_H
