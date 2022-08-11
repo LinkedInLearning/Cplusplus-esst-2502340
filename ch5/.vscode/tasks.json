@@ -1,0 +1,30 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: g++.exe Aktive Datei kompilieren",
+			"command": "C:\\Users\\linkedin\\Downloads\\MinGW\\bin\\g++.exe",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"${fileDirname}\\creditcard.cpp",
+				"${fileDirname}\\customer.cpp",
+				"${fileDirname}\\challenge.cpp",
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.exe"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "Compiler: C:\\Users\\linkedin\\Downloads\\MinGW\\bin\\g++.exe"
+		}
+	]
+}
