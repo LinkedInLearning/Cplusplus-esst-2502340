@@ -27,20 +27,32 @@ struct Customer {
 
 bool verifyStatus(const Customer &cust)
 {
-	// TODO: Alle Karten müssen gültig (valid) sein.
-	// TODO: Premium-Kunden dürften sich weiterhin verschulden, Standard-Kunden nicht
+    if(cust.mCreditcard.mState != CreditCardState::Valid)
+        return false;
+
+    if(cust.mState == CustomerState::Premium)
+        return true;
+
+    if(cust.mCreditcard.mBalance < 0)
+        return false;
+
+    return true;
 }
 
 void withdrawMoney(Customer &cust, const int amnt)
 {
-	// TODO: Prüfen ob Kunde überhaupt Geld abheben darf; Fehler melden, falls nicht.
-	
-	// TODO: Dann Geld abheben    
+    if( !verifyStatus(cust) )
+    {
+        std::cout << "Die Transaktion kann leider nicht durchgefuehrt werden." << std::endl;
+        return;
+    }
+
+    cust.mCreditcard.mBalance -= amnt;
 }
 
 void showBalance(const CreditCard &card)
 {
-	// TODO: Anzeigen wieviel Geld noch auf der Kreditkarte ist
+    std::cout << "Balance: " << card.mBalance << std::endl;
 }
 
 int main()
@@ -48,12 +60,17 @@ int main()
     Customer peter;
     Customer john;
 
-	// TODO: Erkläre Peter zu Premium-Kunde, John zu Standard-Kunde
+    peter.mState = CustomerState::Premium;
+    john.mState = CustomerState::Standard;
+    peter.mCreditcard.mState = CreditCardState::Valid;
+    john.mCreditcard.mState = CreditCardState::Valid;
 
-	// TODO: Zeige hier an, wieviel Geld Sie zur Verfügung haben
+    std::cout << "Peter:"  << std::endl;
+    showBalance(peter.mCreditcard);
+    std::cout << "John:"  << std::endl;
+    showBalance(john.mCreditcard);
 
     std::cout << "Each is going to withdraw some Money: First 50, then 100 and finally 200."  << std::endl;
-    
     withdrawMoney(john, 50);
     withdrawMoney(peter, 50);
 
@@ -63,7 +80,12 @@ int main()
     withdrawMoney(john, 200);
     withdrawMoney(peter, 200);
 
-	// TODO: Zeige hier an, wieviel Geld beide jetzt zur Verfügung haben
+    std::cout << "Balance after withdrawing:" << std::endl;
+    std::cout << "Peter:"  << std::endl;
+    showBalance(peter.mCreditcard);
+    std::cout << "John:"  << std::endl;
+    showBalance(john.mCreditcard);
+
 
     return 0;
 }
