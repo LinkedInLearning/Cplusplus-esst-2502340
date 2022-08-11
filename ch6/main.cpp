@@ -10,7 +10,6 @@ int main()
 
     // Accelerate for one second
     // Assume that while accelerating the position is kept the same.
-    // (like car is not touching surface while getting sped up)
     p308.accelerate(10.0);
     tesla.accelerate(10.0);
 
@@ -23,7 +22,6 @@ int main()
 
     // Drive a bit
     // Now the position changes.
-    // (Car touches the surface)
     p308.drive(10.0);
     tesla.drive(10.0);
 
