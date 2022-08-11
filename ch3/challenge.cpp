@@ -10,11 +10,20 @@ std::shared_ptr<SimpleNode> list;
 
 void addElement(const int value)
 {
-	// TODO: Code that appends a value to the linked list 
+    auto cur = std::make_shared<SimpleNode>();
+    cur->mItem = value;
+    cur->mNext = list;
+
+    list = cur;
 }
 void printList()
 {
-	// TODO: Print all the list items
+    std::shared_ptr<SimpleNode> cur = list;
+    while (cur)
+    {
+        std::cout << cur->mItem << std::endl;
+        cur = cur->mNext;
+    }
 }
 
 int main()
