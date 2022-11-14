@@ -1,10 +1,10 @@
-# C++ Grundkurs - Teil 1
+# C++ Grundkurs 1: Sprachgrundlagen, OOP, Speicherverwaltung, Vererbung
 
-Dies ist das Repository für den **LinkedIn Learning** Kurs `C++ Grundkurs - Teil 1`. Den gesamten Kurs finden Sie auf [LinkedIn Learning][lil-course-url].
+Dies ist das Repository für den **LinkedIn Learning** Kurs `C++ Grundkurs 1: Sprachgrundlagen, OOP, Speicherverwaltung, Vererbung`. Den gesamten Kurs finden Sie auf [LinkedIn Learning][lil-course-url].
 
-!C++ Grundkurs - Teil 1[lil-thumbnail-url][Copy&Past Image from LiL-Buddy] 
+![image](https://user-images.githubusercontent.com/61017085/201684716-815b678a-0bac-4ecd-b44f-ce6f84e242e9.png) 
 
-[COURSEDESCRIPTION]
+Mit seiner mehrteiligen Kursreihe richtet sich Gerhard Stein sowohl an Einsteiger:innen als auch an bereits  erfahrene Programmierer:innen, die  ihre Kenntnisse in der mächtigen Programmiersprache C++ wieder auffrischen oder weiter ausbauen möchten. Schritt für Schritt steigen Sie in die moderne C++-Programmierung ein: Sie lernen die Grundlagen objektorientierter Programmierung (OOP) sowie die grundlegende Syntax von C++ kennen.  Weiterführende Kapitel behandeln Themen wie Strings, effiziente Speicherverwaltung, überladene Operatoren, Klassen und Vererbung bis hin zur Move-Semantik. Mit der Hilfe von zahlreichen Challenges/Solutions-Einheiten können Sie Ihr Wissen immer wieder testen und anschließend Ihre Lösung mit der Ihres Trainers vergleichen.
 
 ## Anleitung
 
@@ -31,8 +31,5 @@ _Maschinenbau-Ingenieurinformatik/Senior Software-Ingenieur_
 Sehen Sie sich andere Kurse des Autors auf [LinkedIn Learning](https://www.linkedin.com/learning/instructors/dr-gerhard-stein) an.
 
 [0]: # (Replace these placeholder URLs with actual course URLs)
-[lil-course-url]: https://www.linkedin.com/learning/building-a-graphql-project-with-react-js
+[lil-course-url]: https://www.linkedin.com/learning/c-plus-plus-grundkurs-1-sprachgrundlagen-oop-speicherverwaltung-vererbung
 [lil-thumbnail-url]: https://cdn.lynda.com/course/2875095/2875095-1615224395432-16x9.jpg
-
-[1]: # (End of DE-Instruction ###############################################################################################)
-	
